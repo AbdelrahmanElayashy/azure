@@ -99,6 +99,7 @@
                     "endpointType": "storagequeue",
                     "properties": {
                         "resourceId": "[parameters('resourceIdOfSharedStorage')]",
+                        
                         "queueName": "[parameters('queueSharedStorage')]",
                         "queueMessageTimeToLiveInSeconds": 604800
                     }
