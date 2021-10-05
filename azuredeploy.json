@@ -8,12 +8,6 @@
                 "description": "description"
             }
         },
-        "SharedStorage": {
-            "type": "string",
-            "metadata": {
-                "description": "description"
-            }
-        },
         "queueSharedStorage": {
             "type": "string",
             "metadata": {
@@ -104,7 +98,7 @@
                 "destination": {
                     "endpointType": "storagequeue",
                     "properties": {
-                        "resourceId": "[concat(parameters('resourceIdOfSharedStorage'), '/', parameters('SharedStorage'))]",
+                        "resourceId": "[parameters('resourceIdOfSharedStorage')]",
                         "queueName": "[parameters('queueSharedStorage')]",
                         "queueMessageTimeToLiveInSeconds": 604800
                     }
